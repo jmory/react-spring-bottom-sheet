@@ -43,6 +43,9 @@ export function useFocusTrap({
       fallbackFocus: fallback,
       escapeDeactivates: false,
       clickOutsideDeactivates: false,
+      tabbableOptions: {
+        getShadowRoot: true,
+      }
     })
     let active = false
 
